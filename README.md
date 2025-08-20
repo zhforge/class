@@ -1,8 +1,3 @@
 # class
 
-Fall 2024
-- CS 2300
-- CS 2370
-- CS 2420
-- CS 2810
-- BIOL 1010
+Fall 2025
