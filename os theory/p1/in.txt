@@ -1,0 +1,16 @@
+new 1000 Hermione Granger  
+new 500 Jack Swallow  
+transfer 2 1 100
+transfer 1 2 5000
+print
+deposit 1 400
+deposit 3 1000
+withdraw 2 100
+new 700 Bilbo Baggins
+new 900 Leia Organa
+new 830 Princess Zelda
+new 3000 The Phantom
+withdraw 1 5000
+withdraw 2 -50
+print
+quit
