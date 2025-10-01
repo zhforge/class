@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1><img id="logo" src="img/alta-logo.png" alt="Alta logo">Alta Ski Resort</h1>
+        <nav>
+            <button class="menu" onclick="openSubsection('lifts')">Lifts</button>
+            <button class="menu" onclick="openSubsection('map')">Map</button>
+            <button class="menu" onclick="openSubsection('about')">About</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="lifts" class="subsection">
+            <div id="sunnyside" class="left-lift">
+                <h2>Sunnyside</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/C87onZYDiK0?si=x4uEGZ_eQEEJKgOq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div id="supreme" class="left-lift">
+                <h2>Supreme</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0_CJjTI0ys8?si=woH7DUtI9IzL-5VO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div id="sugarloaf" class="left-lift">
+                <h2>Sugarloaf</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cOF3cQNA4nc?si=X9dZlfpDyZlXFK-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div id="collins" class="right-lift">
+                <h2>Collins</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cdIpTOXDPMI?si=RDt-MDjmb8Gx6OhX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div id="wildcat" class="right-lift">
+                <h2>Wildcat</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0TV822-QTaY?si=4qpxJ5q8-5gpedBQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div id="ski-img">
+                <figure>
+                    <img src="img/ski-img.jpg" alt="ski img">
+                    <figcaption>
+                        <a href="https://www.flickr.com/photos/pcw_1333/3215979261/">prc1333 on Flickr</a>
+                        <p>Taken in 2009. Skiiers riding Cecret, an old lift no longer in use.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div id="ski-txt">
+                <p>Alta Ski Resort is located at the top of Little Cottonwood Canyon. Showcased are runs from each of the five lifts.</p>
+                <p>Check the Map tab to see a map of the lifts and runs.</p>
+            </div>
+        </section>
+
+        <section id="map" class="subsection" style="display:none">
+            <img id="map-img" src="img/alta-trail-map.jpg" alt="Alta trail map">
+        </section>
+        
+        <section id="about" class="subsection" style="display:none">
+            <div id="about-txt">
+                <h2>About</h2>
+                <p>This website is a class project created by Zachary Carter, avid skiier and Alta enthusiast.</p>
+                <p>He and his family love skiing at Alta often during the winter, and hiking there during the summer.</p>
+                <p>Zach's favorite runs include Vail Ridge, Cabin Hill, Devil's Playground, and Catherine's area.</p>
+                <br>
+                <p>To learn more about Alta, visit the official <a href="https://www.alta.com">Alta Ski Resort website.</a></p>
+                <p>Credit to <a href="https://www.youtube.com/@beyondthelodge">Beyond the Lodge</a> on YouTube for the skiing videos.</p>
+            </div>
+            <div id="about-img">
+                <img src="img/ski-me-1.jpeg" alt="Zach with a snowy background" style="width: 45%">
+                <img src="img/ski-me-2.jpeg" alt="Zach skiing at Alta" style="width: 45%">
+                <img src="img/ski-landscape.jpeg" alt="Evening landscape shot underneath Sugarloaf lift" style="width: 90%">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><i>This website was not created by and has no affiliation with Alta Ski Resort, it is meant only for educational purposes.</i></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
