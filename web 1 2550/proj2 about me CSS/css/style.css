@@ -1,0 +1,139 @@
+body {
+    box-sizing: border-box;
+    background-image: url('../images/snowing.gif');
+    background-clip: padding-box;
+    font-family: "DejaVu Sans Mono", monospace;
+    font-size: 12pt;
+    margin: 0% 20%;
+}
+
+table, th, td {
+    border: 3px outset forestgreen;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    padding: 3px;
+    text-align: left;
+    vertical-align: top;
+    table-layout: fixed;
+}
+
+th {
+    width: 120px;
+    text-align: center;
+    font-size: 18pt;
+    font-variant: small-caps;
+}
+
+th:nth-child(even) {
+    background-color: powderblue;
+}
+
+th:nth-child(odd) {
+    background-color: lightcyan;
+}
+
+th:nth-child(1){
+    width: auto;
+    border: 0px;
+    
+}
+
+td:nth-child(1) {
+    background-color: lightcyan;
+}
+
+td:nth-child(n+2) {
+    padding: 8px;
+}
+
+img {
+    float: right;
+    display: inline;
+    margin: 10px 0px;
+    border-width: 10px;
+    border-style: solid;
+    border-image: radial-gradient(deepskyblue, honeydew) 1;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+h1 {
+    background-color: lightskyblue;
+    box-shadow: 0 0 15px lightskyblue;
+    border-radius: 20px;
+    border: 5px outset lightskyblue;
+    top: 15px;
+    position: relative;
+    width: 60%;
+    display: inline-block;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 40pt;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin: 10px 0px;
+}
+
+h2 {
+    border: 3px outset white;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.main-background {
+    background-color: honeydew;
+    border: 10px ridge lightcyan;
+    padding: 0px 30px;
+}
+
+.interests {
+    text-indent: 50px;
+}
+
+.physics {
+    background-color: lightblue;
+}
+
+.online {
+    background-color: lightgreen;
+}
+
+.lunch {
+    background-color: lightgoldenrodyellow;
+}
+
+.networks {
+    background-color: lightsalmon;
+}
+
+.speaking {
+    background-color: rgb(235, 95, 95);
+}
+
+.skiing {
+    background-color: aquamarine;
+}
+
+.center {
+    text-align: center;
+    width: 90%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
