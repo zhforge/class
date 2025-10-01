@@ -1,0 +1,26 @@
+Case 1: incorrect customer ID
+Input: 1
+Output:
+invalid_argument: No customer found with that ID.
+
+Case 2: correct customer ID, no items bought
+Input: 810003, 0
+Output:
+Items purchased: 0
+Total cost: $0.00
+
+Case 3: one item bought
+Input: 810003, 57464, 0
+Output:
+Almonds Ground Blanched, $2.99
+Items purchased: 1
+Total cost: $2.99
+
+Case 4: three items bought
+Input: 810003, 57464, 23242, 55222, 0
+Output:
+Almonds Ground Blanched, $2.99
+Apricots - Halves, $0.89
+Artichoke - Fresh, $2.39
+Items purchased: 3
+Total cost: $6.27

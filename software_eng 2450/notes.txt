@@ -1,0 +1,4 @@
+cd desktop/prog(r)am(m)ing/software_eng/cs-2450-group-project
+
+- need to figure out how to run the project in vscode terminal for testing
+- for the next task, practice syncing to the latest version of the repository
