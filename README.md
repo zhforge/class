@@ -1,3 +1,1 @@
-# class
-
-Fall 2025
+# class projects
