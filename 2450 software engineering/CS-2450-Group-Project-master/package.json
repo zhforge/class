@@ -1,0 +1,69 @@
+{
+  "name": "cs-2450-group-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "index.js",
+  "pkg": {
+    "assets": [
+      "**/*"
+    ],
+    "targets": [
+      "node18-linux-x64",
+      "node18-macos-x64",
+      "node18-win-x64"
+    ]
+  },
+  "scripts": {
+    "test": "vitest run",
+    "build": "npm run init && electron-builder && open ./dist",
+    "start": "electron .",
+    "build-react": "cd src/renderer && npm run build",
+    "dev": "npm run react",
+    "react": "cd src/renderer && npm start",
+    "init": "npm install && cd src/renderer && npm install && npm run build",
+    "reload": "npm run init && npm run start",
+    "fix": "npm audit fix && cd src/renderer && npm audit fix"
+  },
+  "build": {
+    "appId": "com.example.myapp",
+    "files": [
+      "index.js",
+      "src/files/**/*",
+      "src/electron/**/*",
+      "src/renderer/build/**/*",
+      "src/UVSim/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/ncc": "^0.34.0",
+    "@vitejs/plugin-react": "4.3.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "readline-sync": "^1.4.10",
+    "vite": "6.2.5",
+    "vitest": "3.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "electron": "^34.2.0",
+    "electron-builder": "^25.1.8",
+    "jsdom": "^26.0.0"
+  }
+}
